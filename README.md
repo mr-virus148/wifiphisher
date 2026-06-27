@@ -1,9 +1,6 @@
 🇹🇿 Advanced WiFi Credential Harvester for Tanzania Networks
 Authorized Penetration Testing Tool — No Adapter Required
-        
-installation                                                                                                                                                                                                                                                         
-<br>
-
+                                                                                                                                                                                                                                               
 ---
 
 ## 🧠 Overview / Maelezo ya Jumla
@@ -68,4 +65,79 @@ cd wifiphisher
 pip install colorama requests
 
 # Run as root
-sudo python3 wifihackv2.5.py
+sudo python3 wifihackv2.5.py                                                                                                         
+ 🎯 Usage / Matumizi
+Step-by-Step Setup                                                                                                           ┌─────────────────────────────────────────────────┐
+│                                                 │
+│   [1/4] SELECT TARGET ISP                       │
+│                                                 │
+│      MOBILE WiFi (4G/5G):                       │
+│         1) Airtel Tanzania                      │
+│         2) YAS (Yetu Access Services)           │
+│         3) Halotel Tanzania                     │
+│         4) TTCL Mobile                          │
+│                                                 │
+│      FIBRE WiFi (Home/Office):                  │
+│         5) TTCL Fibre Broadband                 │
+│         6) Zuku Fibre                           │
+│         7) Vodacom Fibre                        │
+│                                                 │
+│         8) Generic Template                     │
+│                                                 │
+│   [2/4] SELECT SCENARIO                         │
+│         1) Security Update                      │
+│         2) Disconnected                         │
+│         3) Authentication Expired               │
+│                                                 │
+│   [3/4] CLOUDFLARE TUNNEL                       │
+│         y = Yes (creates public URL)            │
+│         N = No (local network only)             │
+│                                                 │
+│   [4/4] ✅ SERVER STARTED ON PORT 8080           │
+│                                                 │
+└─────────────────────────────────────────────────┘                                                                                                                                                                                                          ☁️ Cloudflare Tunnel
+No ngrok. No port forwarding. No static IP.
+
+The tool automatically:
+
+Downloads & installs cloudflared (if missing)
+Creates a free public URL: https://xxx.trycloudflare.com
+Keeps tunnel alive for the entire session                                                                                              
+              sample output                                                                                                                    ╔══════════════════════════════════════════════════════════════╗
+║     🇹🇿  TZ-WiFi-Phisher-PRO v2.5 - FIBRE EDITION  🇹🇿      ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║   🎯  LINK YA KUMTUMIA VICTIM:                               ║
+║   https://xyz.trycloudflare.com/wifi?isp=zuku&scenario=update║
+║                                                              ║
+║   📋 DETAILS:                                                ║
+║   ISP        : Zuku Fibre (Fibre)                            ║
+║   Scenario   : Security Update                               ║
+║   Tunnel     : ✅ Cloudflare Active                          ║
+║                                                              ║
+╠══════════════════════════════════════════════════════════════╣
+║                                                              ║
+║   ✅ PASSWORD CAPTURED - 2026-06-27 14:30:22                 ║
+║   🌐 Provider  : zuku                                       ║
+║   🔑 Password  : Zuku@2026                                  ║
+║   📱 IP        : 192.168.1.00                            ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝                                                                                how it works                                                                                                              ┌─────────────┐         ┌──────────────────┐
+         │   ATTACKER   │────────▶│   HTTP SERVER    │
+         │  (Kali Linux)│         │   (Port 8080)    │
+         └──────┬──────┘         └────────┬─────────┘
+                │                         │
+                │ Cloudflare Tunnel       │ ISP Template
+                │ (Public URL)            │ Generator
+                ▼                         ▼
+         ┌─────────────────────────────────────────┐
+         │          VICTIM'S BROWSER                │
+         │                                          │
+         │  1. Clicks link                          │
+         │  2. Sees ISP-branded login page          │
+         │  3. "WiFi Security Update Required"      │
+         │  4. Enters WiFi password                 │
+         │  5. Redirected to YouTube (innocent)     │
+         │  6. Password saved to attacker's file   │
+         └─────────────────────────────────────────┘
+
