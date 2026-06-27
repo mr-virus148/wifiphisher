@@ -102,7 +102,10 @@ The tool automatically:
 
 Downloads & installs cloudflared (if missing)
 Creates a free public URL: https://xxx.trycloudflare.com
-Keeps tunnel alive for the entire session                                                                                              
+Keeps tunnel alive for the entire session
+
+
+            
               sample output                                                                                                                    ╔══════════════════════════════════════════════════════════════╗
 ║     🇹🇿  TZ-WiFi-Phisher-PRO v2.5 - FIBRE EDITION  🇹🇿      ║
 ╠══════════════════════════════════════════════════════════════╣
@@ -122,7 +125,12 @@ Keeps tunnel alive for the entire session
 ║   🔑 Password  : Zuku@2026                                  ║
 ║   📱 IP        : 192.168.1.00                            ║
 ║                                                              ║
-╚══════════════════════════════════════════════════════════════╝                                                                                how it works                                                                                                              ┌─────────────┐         ┌──────────────────┐
+╚════════════════════════════════════════════════════════
+
+
+
+how it works in simple chat
+┌─────────────┐         ┌──────────────────┐
          │   ATTACKER   │────────▶│   HTTP SERVER    │
          │  (Kali Linux)│         │   (Port 8080)    │
          └──────┬──────┘         └────────┬─────────┘
@@ -140,4 +148,43 @@ Keeps tunnel alive for the entire session
          │  5. Redirected to YouTube (innocent)     │
          │  6. Password saved to attacker's file   │
          └─────────────────────────────────────────┘
+
+
+⚠️ Disclaimer / Onyo
+ENGLISH: This tool is intended for authorized penetration testing and educational purposes only. Users must have explicit written permission before testing any system. The author is not responsible for any misuse or illegal activity. Unauthorized use is a criminal offense.
+
+KISWAHILI: Tool hii imetengenezwa kwa ajili ya majaribio ya usalama yaliyoidhinishwa na elimu pekee. Mtumiaji lazima awe na ruhusa ya maandishi kabla ya kuitumia kwenye mfumo wowote. Mwandishi hawajibiki kwa matumizi mabaya au haramu.
+
+
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│   ⚠️  AUTHORIZED PENETRATION TESTING ONLY                    │
+│                                                              │
+│   By using this software, you agree that:                    │
+│   ✅ You have explicit written permission                    │
+│   ✅ You are a qualified security professional              │
+│   ✅ You accept full legal responsibility                    │
+│   ❌ Unauthorized use is ILLEGAL                             │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+
+
+🧪 Tested On / Imejaribiwa Kwenye
+✅ Kali Linux — ✓ Fully functional
+✅ Termux (Android) — ✓ Fully functional
+✅ Ubuntu / Debian — ✓ Fully functional
+✅ Parrot OS — ✓ Fully functional
+
+
+👤 Author / Mwandishi
+Profile	Info
+Name	Mr. Virus
+Country	🇹🇿 Hacker from Tanzania
+WhatsApp	+255 762 358 108
+GitHub	@mr-virus148
+Tool	TZ-WiFi-Phisher-PRO
+
+🎯 TZ-WiFi-Phisher-PRO v2.5
+Hacked with Mr.virus ❤️ in Tanzania 🇹🇿
+
 
