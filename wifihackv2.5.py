@@ -35,13 +35,13 @@ LOG_FILE = "tz_session.log"
 def banner():
     print(Fore.CYAN + Style.BRIGHT + """
 ╔══════════════════════════════════════════════════════════════════════════╗
-║     🇹🇿  TZ-WiFi-Phisher-PRO v2.5 - FIBRE EDITION  🇹🇿                  ║
-║     Advanced WiFi Credential Harvester for Tanzania                     ║
-║                                                                         ║
-║     ISPs: Airtel | YAS | Halotel | TTCL | TTCL Fibre | Zuku | Vodacom ║
-║     CLOUDFLARE TUNNEL - Inafanya kazi kwa uhakika!                     ║
-║     No adapter needed — Link pekee inatosha!                            ║
-║     AUTHORIZED PENTESTING USE ONLY                                      ║
+║     🇹🇿  TZ-WiFi-Phisher-PRO v2.5 - FIBRE EDITION  🇹🇿                      ║
+║     Advanced WiFi Credential Harvester for Tanzania                        ║
+║     github : mrvirus148                                                                       ║
+║     whatsaap me for any problem :255762358108                             ║
+║     CLOUDFLARE TUNNEL - Inafanya kazi kwa uhakika!                      ║
+║     created by Mr.virus hacker from Tanzania                            ║  
+║     AUTHORIZED PENTESTING USE ONLY !                                       ║
 ╚══════════════════════════════════════════════════════════════════════════╝
 """ + Style.RESET_ALL)
 
